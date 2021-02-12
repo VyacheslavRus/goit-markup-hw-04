@@ -61,12 +61,25 @@
   margin-left: auto;
 }
 
-.site-item {
+.site-item:not(:first-child) {
   margin-left: 50px;
 }
 
-.site-item:first-child {
-  margin-left: 0px;
+.connection-link li:last-child {
+  margin-left: 50px;
+}
+
+.svg-mail {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.svg-tel {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .site-nav .link {
@@ -86,10 +99,12 @@
 .connection-link .link {
   color: var(--primary-text-color);
 
-  display: block;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: 50px;
 
   font-weight: 500;
   font-size: 14px;
@@ -120,6 +135,7 @@
   text-align: center;
 
   background-color: #2f303a;
+  background-image: ;
 }
 .hero-title {
   color: #ffffff;
