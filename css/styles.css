@@ -12,6 +12,33 @@
   letter-spacing: 3%;
 }
 
+/* Убрать черную рамку */
+a:active,
+a:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+input:active,
+textarea:active {
+  outline: none;
+}
+:focus {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+textarea {
+  resize: vertical;
+}
+textarea {
+  resize: horizontal;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -116,11 +143,13 @@
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 
 .connection-link .link:hover,
 .connection-link .link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 
 .site-nav .link.current {
@@ -165,7 +194,8 @@
   width: 200px;
   height: 50px;
 
-  border-radius: 3px;
+  cursor: pointer;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -344,10 +374,24 @@
   background-color: #2196f3;
 }
 
+.linkedin:focus,
+.facebook:focus,
+.twitter:focus,
+.instagram:focus {
+  background-color: #2196f3;
+}
+
 .linkedin:hover svg,
 .facebook:hover svg,
 .twitter:hover svg,
 .instagram:hover svg {
+  fill: #ffffff;
+}
+
+.linkedin:focus svg,
+.facebook:focus svg,
+.twitter:focus svg,
+.instagram:focus svg {
   fill: #ffffff;
 }
 
@@ -432,12 +476,30 @@
   border-color: #2196f3;
 }
 
+.icon-build:focus,
+.icon-brand:focus,
+.foster-peters:focus,
+.company-fruits:focus,
+.company-tagline:focus,
+.ya-and-co:focus {
+  border-color: #2196f3;
+}
+
 .icon-build:hover svg,
 .icon-brand:hover svg,
 .foster-peters:hover svg,
 .company-fruits:hover svg,
 .company-tagline:hover svg,
 .ya-and-co:hover svg {
+  fill: #2196f3;
+}
+
+.icon-build:focus svg,
+.icon-brand:focus svg,
+.foster-peters:focus svg,
+.company-fruits:focus svg,
+.company-tagline:focus svg,
+.ya-and-co:focus svg {
   fill: #2196f3;
 }
 
@@ -456,35 +518,6 @@ footer {
 .addres-boks {
   margin-right: 70px;
 }
-
-.netwoks-title {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  
-  padding-top: 9px;
-  margin-bottom: 20px;
-}
-
-.networks-list li:not(:last-child) {
-  margin-right: 10px;
-  
-}
-
-.networks-list {
-  display: flex;
-  justify-content: center;
-}
-.networks-list li {
-  width: 44px;
-  height: 44px;
-
-.networks-list svg {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
 
 .logo-part {
   color: #ffffff;
@@ -528,6 +561,63 @@ footer {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+
+/* Часть с networks */
+
+.netwoks-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  padding-top: 9px;
+  margin-bottom: 20px;
+}
+
+.networks-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.networks-list {
+  display: flex;
+  fill: #ffffff;
+}
+
+.networks-list li {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.networks-list li:hover {
+  background-color: #2196f3;
+}
+
+.networks-list a:focus {
+  background-color: #2196f3;
+}
+
+.networks-list a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.networks-list svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 
 /* Портфолио */
