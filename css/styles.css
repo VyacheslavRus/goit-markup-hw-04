@@ -314,6 +314,7 @@ textarea {
 }
 
 .list-item {
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -444,6 +445,26 @@ textarea {
   width: 170px;
   height: 90px;
   margin-right: 30px;
+}
+
+.clients-list .company-fruits-svg {
+  width: 41px;
+  height: 43px;
+}
+
+.clients-list .foster-peters-svg {
+  width: 80px;
+  height: 42px;
+}
+
+.clients-list .icon-brand-svg {
+  width: 59px;
+  height: 47px;
+}
+
+.clients-list .icon-build-svg {
+  width: 88px;
+  height: 45px;
 }
 
 .clients-list svg {
@@ -673,6 +694,7 @@ footer {
 }
 
 .projects-list a:focus {
+  display: inline-block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -684,6 +706,7 @@ footer {
 }
 
 .projects-item {
+  width: 370px;
   margin-left: 30px;
   margin-top: 30px;
   background: #ffffff;
